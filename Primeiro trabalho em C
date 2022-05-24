@@ -1,0 +1,22 @@
+int main()      // Início da função
+{
+    float num1;       //declaração de variaveis
+    float num2;      //declaração de variaveis
+    float media;    //declaração de variaveis
+    
+    printf("Esse e meu programa de C\n");       // imprime na algo tela 
+    printf("Entre com  o primeiro número no programa: ");       // imprime na tela o pedido do primeiro número
+    scanf("%f",&num1);      // Faz a leitura  da variável int num1 
+    printf("Entre com  o segundo número no programa: ");        // imprime na tela o pedido do segundo número
+    scanf("%f",&num2);      // Faz a leitura da variável int num2 
+    
+    media = (num1+num2) / 2;        //Essa função soma os 2 numeros e calcula a media
+    printf("A media desse aluno é: %.1f\n",media); //   Imprime um texto formatado junto com a media 
+        
+    if (media >= 6) {       // Condição para a aprovação
+    printf("Esse aluno foi aprovado por estar na media");       // Imprime se o aluno foi aprovado
+    } else {
+    printf("Esse aluno foi reprovado por não estar na media");      // Imprime se o aluno foi reprovado
+    }
+    return 0;
+} 
