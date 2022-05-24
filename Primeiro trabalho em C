@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main()      // Início da função
 {
     float num1;       //declaração de variaveis
@@ -5,6 +7,7 @@ int main()      // Início da função
     float media;    //declaração de variaveis
     
     printf("Esse e meu programa de C\n");       // imprime na algo tela 
+    printf("Feito Por Guilherme de Alemida Torrão. Da Turma 3B INFO\n");        // imprime na algo tela 
     printf("Entre com  o primeiro número no programa: ");       // imprime na tela o pedido do primeiro número
     scanf("%f",&num1);      // Faz a leitura  da variável int num1 
     printf("Entre com  o segundo número no programa: ");        // imprime na tela o pedido do segundo número
@@ -18,5 +21,5 @@ int main()      // Início da função
     } else {
     printf("Esse aluno foi reprovado por não estar na media");      // Imprime se o aluno foi reprovado
     }
-    return 0;       //Finaliza o programa
+    return 0;
 } 
