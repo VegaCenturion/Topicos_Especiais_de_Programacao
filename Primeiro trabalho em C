@@ -18,5 +18,5 @@ int main()      // Início da função
     } else {
     printf("Esse aluno foi reprovado por não estar na media");      // Imprime se o aluno foi reprovado
     }
-    return 0;
+    return 0;       //Finaliza o programa
 } 
