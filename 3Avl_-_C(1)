@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+float x = 0;
+float y = 0;
+float z = 0;
+
+float conta(){
+    printf("Entre com o valor seu salario: ");
+    scanf("%f", &x);
+    return (x);
+}
+
+add_conta(){
+        conta();
+        printf("Digite o saldo que deseja adicionar a sua conta: ");
+        scanf("%f", &y);
+        (x += y);
+        
+    }
+rem_conta(){
+    
+    printf("Digite o saldo que deseja remover a sua conta: ");
+    scanf("%f", &y);
+        (x -= z);
+}
+
+int main()
+{
+    printf("Escolha a opção desejada: 1 para adicionar saldo; 2 para retirar saldo: ");
+    int escolha = 0;
+    scanf("%d", &escolha);
+    if(escolha == 1){
+        add_conta();
+        printf("Seu saldo atual é de: %f", x);
+    } else if(escolha == 2) {
+        rem_conta();
+        printf("Seu saldo atual é de: %f", x);
+    }
+    
+        
+    
+    return 0;
+}
