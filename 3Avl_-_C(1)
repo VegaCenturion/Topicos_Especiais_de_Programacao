@@ -5,36 +5,36 @@ float y = 0;
 float z = 0;
 
 float conta(){
-    printf("Entre com o valor seu salario: ");
+    printf("Entre com o valor seu salario: "); // Função que define o valor do seu salario
     scanf("%f", &x);
     return (x);
 }
 
 add_conta(){
         conta();
-        printf("Digite o saldo que deseja adicionar a sua conta: ");
+        printf("Digite o saldo que deseja adicionar a sua conta: "); // Função que define o quando você deseja adcionar
         scanf("%f", &y);
         (x += y);
         
     }
 rem_conta(){
     
-    printf("Digite o saldo que deseja remover a sua conta: ");
+    printf("Digite o saldo que deseja remover a sua conta: "); // Função que define o quando você deseja remover
     scanf("%f", &y);
         (x -= z);
 }
 
 int main()
 {
-    printf("Escolha a opção desejada: 1 para adicionar saldo; 2 para retirar saldo: ");
-    int escolha = 0;
-    scanf("%d", &escolha);
+    printf("Escolha a opção desejada: 1 para adicionar saldo; 2 para retirar saldo: "); // Opção de define a operação desejada
+    float escolha = 0;
+    scanf("%f", &escolha);
     if(escolha == 1){
         add_conta();
-        printf("Seu saldo atual é de: %f", x);
+        printf("Seu saldo atual é de: %f", x); //Printa na tela o saldo atual
     } else if(escolha == 2) {
         rem_conta();
-        printf("Seu saldo atual é de: %f", x);
+        printf("Seu saldo atual é de: %f", x); //Printa na tela o saldo atual
     }
     
         
