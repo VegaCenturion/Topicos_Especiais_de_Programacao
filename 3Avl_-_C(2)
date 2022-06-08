@@ -1,1 +1,16 @@
+#include <stdio.h>
 
+int x = 0; // Valor da variavel
+int y = 0; // Valor da variavel
+
+int main(){
+    printf("Entre com os números pra X e Y: "); // Printa o que se pede para o programa
+    scanf("%d", &x);
+    scanf("%d", &y);
+    
+        if (x > y) { // Bloco de condição
+            printf("O número X e maior que y"); // se X for maior que Y
+        } else {
+            printf("o número Y e maior que X"); // se Y for maior que Y
+        }
+}
