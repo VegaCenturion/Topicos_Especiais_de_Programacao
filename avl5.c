@@ -1,3 +1,5 @@
+// checa se a letra p foi digitada pelo teclado usando de base o programa da avaliação 4 enquanto usa do while
+
 #include <stdio.h>
 int main()
 {
