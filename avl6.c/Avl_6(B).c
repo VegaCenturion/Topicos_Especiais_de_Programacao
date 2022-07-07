@@ -10,20 +10,16 @@
                 printf("Digite um valor entre 1 e 10\n");       //imprime o que esta entre parenteses
             }
         printf("Agora tente acertar a posição \n");     //imprime o que esta entre parenteses
-        for(int i = tiros; i >= 0; i--){    //condição para remover tentativas usadas 
-           while(tiro != posicao){
-            scanf("%d", &tiro);         //recebe qual foi a tentativas
-            switch(tiro)    
-                {
-                    default:
-                        if(tiro == posicao){        // checa se a tentativa foi igual a posição
-                            printf("Você acertou a posição\n");     //imprime o que esta entre parenteses
-                            break;      //condição de parada
-                        } else {        // condição caso erre a posição
+        for(int i = tiros; i > 0; i--){    //condição para remover tentativas usadas 
+            while(tiro != posicao){         // checa se a tentativa e igual a posição
+                scanf("%d", &tiro);         //recebe qual foi a tentativas
+                        if(tiro != posicao){        // checa se a tentativa foi igual a posição
                             printf("Você errou a posição e tem mais%d" ,&tiros); //imprime o que esta entre parenteses
+                            continue;
+                        }  else {        // condição caso erre a posição
+                            printf("Você acertou a posição\n");     //imprime o que esta entre parenteses
                         }
                 }
-        }
     }
-        
+       return 0; 
     }
