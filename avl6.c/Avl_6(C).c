@@ -19,6 +19,7 @@
                             printf("Você errou a posição e tem mais%d" ,&tiros); //imprime o que esta entre parenteses
                         }
                 }
+            
     }
-        
+       return 0; 
     }
