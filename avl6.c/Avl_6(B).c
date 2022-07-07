@@ -11,10 +11,11 @@
             }
         printf("Agora tente acertar a posição \n");     //imprime o que esta entre parenteses
         for(int i = tiros; i >= 0; i--){    //condição para remover tentativas usadas 
+           while(tiro != posicao){
             scanf("%d", &tiro);         //recebe qual foi a tentativas
             switch(tiro)    
                 {
-                    case 1:
+                    default:
                         if(tiro == posicao){        // checa se a tentativa foi igual a posição
                             printf("Você acertou a posição\n");     //imprime o que esta entre parenteses
                             break;      //condição de parada
@@ -22,6 +23,7 @@
                             printf("Você errou a posição e tem mais%d" ,&tiros); //imprime o que esta entre parenteses
                         }
                 }
+        }
     }
         
     }
