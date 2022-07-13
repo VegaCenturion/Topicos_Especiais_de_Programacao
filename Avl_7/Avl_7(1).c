@@ -9,7 +9,7 @@ int main()
     char str3[100];     // Vetor para a String concatenada
   
     int a = 0;      // variável de incremento 
-    int b = 0;      //variável de incremento
+    int b = 0;      // variável de incremento
   
     printf("\nEsntre com a primeira String:");      // Imprime no console
     scanf("%s", &str1);                             // Escaneia do console
