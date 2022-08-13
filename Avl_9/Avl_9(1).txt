@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+
+//Progama que ler do teclado dois nomes de pessoas e imprime em ordem alfabética.
+
+
+int main(){
+    
+    int i,j;     // Variaveis Integer para os contadores
+    char nomes[1000][1000],o[1000];
+    
+    printf("Entre com os nomes em qualquer ordem:\n"); 
+    for(i=0;i<2;i++){                                   //For para receber os nome digitados do teclado
+        scanf("%s",nomes[i]);                             
+    }                                       
+    for(i=0;i<2;i++){
+        for(j=i+1;j<2;j++){                         //Condição For que checa se os nomes são iguais
+            if(strcmp(nomes[i],nomes[j])>0){
+                strcpy(o,nomes[i]);
+                strcpy(nomes[i],nomes[j]);
+                strcpy(nomes[j],o);
+            }
+        }
+    }
+    printf("\nA ordem alfabética é:\n");    //Imprime os nomes ja em ordem alfabética
+        for(i=0;i<2;i++){
+            printf("%s\n",nomes[i]);
+        }
+    return 0;       //Finaliza o Progama
+}
