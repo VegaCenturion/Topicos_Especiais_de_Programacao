@@ -1,2 +1,2 @@
-# Topicos_Especiais_de_Progamacao
+# Topicos_Especiais_de_Programacao
 Repositório para da disciplina de C 
