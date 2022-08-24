@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
+
+//Considerando a entrada via teclado de um número na base hexadecimal converta para a base decimal. (Não vale utilizar a máscara no printf).
+// Guilherme de Almeida Torrão  3BINFO
+
+
+int main()
+{
+    char hexa[20]; //vetor que recebe o valor de hexa
+    
+    long long decimal = 0, base = 1;
+    int i = 0, valor, tam;
+    
+    printf("Entre com um numero Hexadecimal: ");
+    fgets(hexa,20,stdin);
+    tam = strlen(hexa);             //recebe o tamanho do vetor de hexadecimal e converte em inteiro
+    
+    for(i = tam--; i >= 0; i--)     //função que percorre inversamente o vetor de hexa para caulcular
+    {
+        if(hexa[i] >= '0' && hexa[i] <= '9')
+        {
+            decimal += (hexa[i] - 48) * base;
+            base *= 16;
+        }
+        else if(hexa[i] >= 'A' && hexa[i] <= 'F')
+        {
+            decimal += (hexa[i] - 55) * base;
+            base *= 16;
+        }
+        else if(hexa[i] >= 'a' && hexa[i] <= 'f')
+        {
+            decimal += (hexa[i] - 87) * base;
+            base *= 16;
+        }
+    }
+    
+    
+    printf("Valor em decimal: %lld\n", decimal);    //imprime o valor na base Decimal apos a conversão
+    return 0;
+}

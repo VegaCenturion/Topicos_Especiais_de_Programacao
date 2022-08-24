@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+// 1 - Considerando uma lista de números inteiros desordenada (entrada via teclado). 
+// Coloque em ordem decrescente (não vale utilizar função pronta - biblioteca).
+// Guilherme de Almeida Torrão  3BINFO
+
+int main()
+{
+    int a [10];
+    
+    printf("digite uma sequencia de numeros: ");
+    
+    for (int i = 0; i < 10; i++){       //for que percorre o vetor
+        scanf("%d",& a[i]);
+    }
+    
+    for(int i = 0; i < 10; i++){        //função de troca de valores
+        for(int j = 0; j < 10; j++){
+            if( a[i] > a[j]){
+                int aux = a[i];
+                a[i] = a[j];
+                a[j] = aux;
+            }
+        }
+    }
+    for (int i = 0; i < 10; i++){ //função para printar os valores
+        printf("%d\n", a[i]);
+    }
+    
+    return 0;
+}
+
